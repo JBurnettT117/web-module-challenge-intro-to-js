@@ -223,7 +223,7 @@ function game(user, computer){
     if (computer === 'paper'){
       return "it's a tie"
     }
-    if (computer === scissors){
+    if (computer === 'scissors'){
       return "you lose!"
     }
   } 
@@ -253,11 +253,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(i){
- return i * .6213711922
+function miles(km){
+ return km * .621371
 }
 
-console.log(miles(20))
+console.log(miles(1))
 
 
 //Task 5b - Centimeters to Feet
@@ -269,7 +269,7 @@ Using the feet function below do the following:
 */
 
 function feet(i){
-  return i * .0328084;
+  return i / 30.48;
 }
 
 console.log(feet(4))
@@ -289,13 +289,13 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-  for (let i = number; i > 0; i -1)
-      return i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + (i -1) + " bottles of soda on the wall";
-  console.log(annoyingSong(i))
-    }
- 
+  for (let i = number; i > 0; i--)
+  return (i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + (i -1) + " bottles of soda on the wall");
+  }
 
-console.log(annoyingSong(12))
+
+
+  annoyingSong(45)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -312,11 +312,25 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if (score >= 90){
+  return 'you got an A'
+}
+else if (score >= 80){
+  return 'you got a B'
+}
+else if (score >= 70){
+  return 'you got a C'
+}
+else if (score >= 60){
+  return 'you got a D'
+}
+else {
+  return 'you got an F'
+}
 }
 
-
+console.log(grade(50))
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
